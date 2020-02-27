@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseModeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cab"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue"
+            android:gravity="center_horizontal"
+            android:text="Taxi App"
+            android:textColor="@color/colorAccent"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="goToPassengerSignIn"
+            android:id="@+id/passengerButton"
+            android:text="I'm a passenger"
+            android:textSize="20sp"
+            android:background="@color/colorBlue"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp" />
+
+        <Button
+            android:id="@+id/driverButton"
+            android:onClick="goToDriverSignIn"
+            android:text="I'm a driver"
+            android:textSize="20sp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</FrameLayout>
